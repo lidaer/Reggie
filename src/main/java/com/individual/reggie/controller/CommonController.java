@@ -28,7 +28,7 @@ public class CommonController {
     private String basePath;
 
     /**
-     * 文件上传
+     * 图片上传，请求服务器将图片保存在服务器
      * @param file
      * @return
      */
@@ -39,7 +39,7 @@ public class CommonController {
 
         //原始文件名
         String originalFilename = file.getOriginalFilename();
-        String suffix=originalFilename.substring(originalFilename.lastIndexOf(","));
+        String suffix=originalFilename.substring(originalFilename.lastIndexOf("."));
 
         //使用UUID重新生成文件名，防止文件名称重复造成文件覆盖
         String fileName = UUID.randomUUID().toString()+suffix;
@@ -62,7 +62,7 @@ public class CommonController {
     }
 
     /**
-     * 文件下载到浏览器
+     * 图片下载，将上传的图片回显
      * @param name
      * @param response
      */

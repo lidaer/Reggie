@@ -1,4 +1,4 @@
-package com.individual.Filter;
+package com.individual.reggie.Filter;
 
 import com.alibaba.fastjson.JSON;
 import com.individual.reggie.common.BaseContext;
