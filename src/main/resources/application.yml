@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/reggie
+    url: jdbc:mysql://192.168.243.128:3306/reggie
     username: root
-    password: 123456
+    password: root
     type: com.alibaba.druid.pool.DruidDataSource
 
 reggie:
